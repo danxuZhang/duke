@@ -86,17 +86,17 @@ public final class StorageFile {
         }
         Scanner fileScanner = new Scanner(file);
         int cnt = 0;
-        int cnt_success = 0;
+        int cntSuccess = 0;
         while (fileScanner.hasNext()) {
             cnt += 1;
             try {
                 taskList.addTask(new CsvParser().parseLine(fileScanner.nextLine()));
-                cnt_success += 1;
+                cntSuccess += 1;
             } catch (DuplicateTaskException | IllegalArgumentException e) {
                 System.err.printf("Failed to load line %d.\n", cnt);
             }
         }
-        return cnt_success;
+        return cntSuccess;
     }
 
 }

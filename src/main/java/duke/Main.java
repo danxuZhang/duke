@@ -27,7 +27,7 @@ public class Main {
 
     /**
      * Runs the program until exits.
-     * @param args: init arguments
+     * @param args init arguments.
      */
     private void run(String... args) {
         init();
@@ -37,8 +37,8 @@ public class Main {
 
     /**
      * Initializes the required objects, loads data from the disk,
-     * and print welcome messages
-     * @param args: init arguments
+     * and print welcome messages.
+     * @param args init arguments.
      */
     private void init(String... args) {
         try {
